@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dQu-jw-NQG">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Employee Table View Controller-->
+        <scene sceneID="9y3-B2-8gl">
+            <objects>
+                <tableViewController title="Employee Table View Controller" id="nLR-Je-uXD" customClass="EmployeeTableViewController" customModule="Employees" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="x00-HP-Rhl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmployeeTableCell" rowHeight="96" id="qQY-HM-Ldl" customClass="EmployeeTableViewCell" customModule="Employees" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="96"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qQY-HM-Ldl" id="Z5m-Lc-omH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="95.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YyU-V3-BMk">
+                                            <rect key="frame" x="30" y="5" width="130" height="85.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="Rru-wK-ptg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOY-9A-M7p">
+                                            <rect key="frame" x="185" y="27.5" width="204" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bp-Ne-xb5">
+                                            <rect key="frame" x="185" y="47.5" width="204" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YyU-V3-BMk" firstAttribute="leading" secondItem="Z5m-Lc-omH" secondAttribute="leading" constant="30" id="2gn-1C-xYn"/>
+                                        <constraint firstItem="YyU-V3-BMk" firstAttribute="centerY" secondItem="Z5m-Lc-omH" secondAttribute="centerY" id="Rex-rT-R8B"/>
+                                        <constraint firstAttribute="trailing" secondItem="tOY-9A-M7p" secondAttribute="trailing" constant="25" id="UEb-q1-Y6H"/>
+                                        <constraint firstItem="tOY-9A-M7p" firstAttribute="centerY" secondItem="Z5m-Lc-omH" secondAttribute="centerY" constant="-10" id="Yq6-q4-3Qh"/>
+                                        <constraint firstItem="YyU-V3-BMk" firstAttribute="top" secondItem="Z5m-Lc-omH" secondAttribute="top" constant="5" id="ZEA-X5-dGP" userLabel="Employee Image.top = top + 3"/>
+                                        <constraint firstItem="8Bp-Ne-xb5" firstAttribute="leading" secondItem="YyU-V3-BMk" secondAttribute="trailing" constant="25" id="cNO-VY-agd"/>
+                                        <constraint firstAttribute="bottom" secondItem="YyU-V3-BMk" secondAttribute="bottom" constant="5" id="eTx-ZC-KMe" userLabel="Employee Image.bottom = bottom + 5"/>
+                                        <constraint firstAttribute="trailing" secondItem="8Bp-Ne-xb5" secondAttribute="trailing" constant="25" id="fDf-Pa-ypN"/>
+                                        <constraint firstItem="tOY-9A-M7p" firstAttribute="leading" secondItem="YyU-V3-BMk" secondAttribute="trailing" constant="25" id="lY5-0g-PVa"/>
+                                        <constraint firstItem="8Bp-Ne-xb5" firstAttribute="centerY" secondItem="Z5m-Lc-omH" secondAttribute="centerY" constant="10" id="w6M-xo-zic"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="employeeImage" destination="YyU-V3-BMk" id="t5Z-aq-pqe"/>
+                                    <outlet property="employeeLabel" destination="tOY-9A-M7p" id="Lii-q0-hGS"/>
+                                    <outlet property="employeeTitle" destination="8Bp-Ne-xb5" id="jLI-yj-A3w"/>
+                                    <segue destination="2iI-mr-8gq" kind="show" identifier="showEmployeeDetails" id="rjx-Ng-Pay"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nLR-Je-uXD" id="wr9-bG-gEa"/>
+                            <outlet property="delegate" destination="nLR-Je-uXD" id="Z4M-0O-djU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Employees" id="FOr-4E-jWs"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0t-3F-kN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239.1304347826087" y="-63.616071428571423"/>
+        </scene>
+        <!--Employee Details-->
+        <scene sceneID="ej8-qz-uEa">
+            <objects>
+                <viewController id="2iI-mr-8gq" customClass="EmployeeDetailViewController" customModule="Employees" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m7S-4e-47o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeG-Pa-dFL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FeG-Pa-dFL" firstAttribute="trailing" secondItem="pVY-MD-NZD" secondAttribute="trailing" id="GL6-9K-pD4"/>
+                            <constraint firstItem="FeG-Pa-dFL" firstAttribute="leading" secondItem="pVY-MD-NZD" secondAttribute="leading" id="XhZ-wX-6tB"/>
+                            <constraint firstAttribute="bottom" secondItem="FeG-Pa-dFL" secondAttribute="bottom" id="exm-69-oO1"/>
+                            <constraint firstItem="FeG-Pa-dFL" firstAttribute="top" secondItem="pVY-MD-NZD" secondAttribute="top" id="xaX-om-oe8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pVY-MD-NZD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Employee Details" largeTitleDisplayMode="never" id="fO7-ni-6ov"/>
+                    <connections>
+                        <outlet property="webView" destination="FeG-Pa-dFL" id="bpZ-Zq-paY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDB-L9-Et1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.6231884057975" y="-64.285714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xQ2-a3-zGm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dQu-jw-NQG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="exK-CF-Z6q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nLR-Je-uXD" kind="relationship" relationship="rootViewController" id="4R9-ml-Xup"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxd-xW-D90" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="-64"/>
+        </scene>
+    </scenes>
+</document>

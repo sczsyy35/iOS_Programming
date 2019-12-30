@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chapter22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFI-xD-std">
+                                <rect key="frame" x="64" y="28" width="768" height="310"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWu-V3-Rg9">
+                                        <rect key="frame" x="363" y="144.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hWu-V3-Rg9" firstAttribute="centerY" secondItem="YFI-xD-std" secondAttribute="centerY" id="fnB-Zj-slK"/>
+                                    <constraint firstItem="hWu-V3-Rg9" firstAttribute="centerX" secondItem="YFI-xD-std" secondAttribute="centerX" id="wfP-Kf-3Pu"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-cL-Qbq">
+                                <rect key="frame" x="366" y="363" width="461" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lig-cL-Qbq" secondAttribute="trailing" constant="25" id="0Yo-yH-rHW" userLabel="My Button.trailing = Safe Area.trailing + 25"/>
+                            <constraint firstItem="Lig-cL-Qbq" firstAttribute="top" secondItem="YFI-xD-std" secondAttribute="bottom" constant="25" id="9lJ-tD-aDD"/>
+                            <constraint firstItem="YFI-xD-std" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NiC-NA-wrt"/>
+                            <constraint firstItem="Lig-cL-Qbq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QjL-pa-mWd"/>
+                            <constraint firstItem="YFI-xD-std" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ozd-IZ-iaZ"/>
+                            <constraint firstItem="Lig-cL-Qbq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="322" id="q6J-ft-KNB"/>
+                            <constraint firstItem="YFI-xD-std" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="vwv-cY-441"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="centerConstraint" destination="wfP-Kf-3Pu" id="j47-bF-4ry"/>
+                        <outlet property="myButton" destination="Lig-cL-Qbq" id="Xe4-fX-PLU"/>
+                        <outlet property="myLabel" destination="hWu-V3-Rg9" id="Bd3-4L-IUb"/>
+                        <outlet property="viewB" destination="YFI-xD-std" id="D3V-X4-IPr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>

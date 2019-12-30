@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ed8-Op-AXJ">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scene4Controller-->
+        <scene sceneID="Xf1-2Y-W45">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" referencedIdentifier="Scene4Controller" id="uh0-5Z-BCr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0B-l1-ixg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2311" y="-191"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XJB-Pf-B3z">
+            <objects>
+                <viewController id="ed8-Op-AXJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ej-Dd-ozI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4L-tX-88z">
+                                <rect key="frame" x="158" y="275" width="98" height="30"/>
+                                <state key="normal" title="Go to Scene 4"/>
+                                <connections>
+                                    <segue destination="uh0-5Z-BCr" kind="presentation" modalTransitionStyle="crossDissolve" id="cnZ-Oo-DnX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPf-oR-krf">
+                                <rect key="frame" x="175.5" y="174" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B4L-tX-88z" firstAttribute="centerX" secondItem="8Ej-Dd-ozI" secondAttribute="centerX" id="a57-hF-0qn"/>
+                            <constraint firstItem="OPf-oR-krf" firstAttribute="top" secondItem="p68-G4-njN" secondAttribute="top" constant="130" id="gcR-tu-ZEi" userLabel="Scene 3 Label.top = Safe Area.top + 150"/>
+                            <constraint firstItem="OPf-oR-krf" firstAttribute="centerX" secondItem="8Ej-Dd-ozI" secondAttribute="centerX" id="isl-g5-2jT" userLabel="Scene 3 Label.centerX = centerX"/>
+                            <constraint firstItem="B4L-tX-88z" firstAttribute="top" secondItem="OPf-oR-krf" secondAttribute="bottom" constant="80" id="tWT-eM-0xm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p68-G4-njN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lha-TL-WZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="-107"/>
+        </scene>
+    </scenes>
+</document>
